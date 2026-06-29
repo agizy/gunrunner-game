@@ -7,6 +7,17 @@
     const header = $('#siteHeader');
     const hamburger = $('#hamburger');
     const mobileMenu = $('#mobileMenu');
+    const cursorGlow = $('#cursorGlow');
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* ===== Cursor Glow ===== */
+    if (cursorGlow && !prefersReducedMotion) {
+        document.addEventListener('mousemove', (e) => {
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+        }, { passive: true });
+    }
 
     /* ===== Mobile Menu ===== */
     hamburger.addEventListener('click', () => {
@@ -51,36 +62,31 @@
             }
         });
     }, {
-        threshold: 0.15,
+        threshold: 0.1,
         rootMargin: '0px 0px -40px 0px'
     });
 
-    $$('.reveal').forEach((el, i) => {
-        el.style.transitionDelay = `${i * 0.08}s`;
+    // Observe all elements that should reveal
+    $$('.reveal, .features__header, .gallery__header, .gallery__item, .arsenal__left, .arsenal__right, .download__content').forEach((el) => {
+        if (!el.classList.contains('reveal')) {
+            el.classList.add('reveal');
+        }
         revealObserver.observe(el);
     });
 
-    // Also reveal section headers
-    $$('.section-header, .gallery__item, .download__content').forEach((el) => {
-        el.classList.add('reveal');
-        revealObserver.observe(el);
+    // Stagger gallery items
+    $$('.gallery__item').forEach((item, i) => {
+        item.style.transitionDelay = `${i * 0.1}s`;
     });
 
-    /* ===== Platform Button Demo ===== */
-    $$('.platform-btn').forEach((btn) => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const platform = btn.dataset.platform;
-            const name = btn.querySelector('.platform-btn__name').textContent;
+    // Stagger feature cards with offset for the large card
+    $$('.feature-card').forEach((card, i) => {
+        card.style.transitionDelay = `${i * 0.06}s`;
+    });
 
-            // Brief flash effect
-            btn.style.borderColor = 'var(--coral)';
-            btn.style.boxShadow = '0 0 30px rgba(255, 107, 107, 0.3)';
-            setTimeout(() => {
-                btn.style.borderColor = '';
-                btn.style.boxShadow = '';
-            }, 600);
-        });
+    /* ===== Gallery keyboard accessibility ===== */
+    $$('.gallery__item').forEach((item) => {
+        item.setAttribute('tabindex', '0');
     });
 
 })();
