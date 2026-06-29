@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GunRunner: Enter The Chaos | Bullet-Hell Roguelike</title>
+    <meta name="description" content="GunRunner is a fast-paced bullet-hell roguelike inspired by Enter the Gungeon. Hundreds of weapons, procedural dungeons, and intense combat await.">
+    <meta name="keywords" content="GunRunner, bullet-hell, roguelike, indie game, Enter the Gungeon, pixel art, dungeon crawler">
+    <meta name="author" content="GunRunner Game Studio">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="GunRunner: Enter The Chaos">
+    <meta property="og:description" content="A fast-paced bullet-hell roguelike. Hundreds of weapons, procedural dungeons, and intense combat.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://placehold.co/1200x630/0a0a0a/ff6b6b?text=GunRunner">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GunRunner: Enter The Chaos">
+    <meta name="twitter:description" content="A fast-paced bullet-hell roguelike. Hundreds of weapons, procedural dungeons, and intense combat.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header" id="siteHeader">
+        <nav class="nav">
+            <a href="#" class="nav__logo" aria-label="GunRunner Home">
+                <span class="nav__logo-icon">G</span>
+                <span class="nav__logo-text">GunRunner</span>
+            </a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+            <div class="nav__actions">
+                <a href="#download" class="nav__cta">Play Now</a>
+                <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu__links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#download">Download</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <div class="hero__grid-lines"></div>
+            <div class="hero__glow hero__glow--coral"></div>
+            <div class="hero__glow hero__glow--gold"></div>
+        </div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">Bullet-Hell Roguelike</p>
+            <h1 class="hero__title">
+                <span class="hero__title-main">GunRunner</span>
+            </h1>
+            <p class="hero__subtitle">Enter The Chaos</p>
+            <p class="hero__desc">Dodge, shoot, and survive through procedurally generated dungeons packed with hundreds of unique weapons, deadly bosses, and relentless bullet patterns.</p>
+            <div class="hero__ctas">
+                <a href="#download" class="btn btn--primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download Now
+                </a>
+                <a href="#features" class="btn btn--ghost">Discover More</a>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator">
+            <div class="hero__scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="features__container">
+            <div class="section-header">
+                <span class="section-header__eyebrow">Game Features</span>
+                <h2 class="section-header__title">Built For Chaos</h2>
+                <p class="section-header__desc">Every run is different. Every bullet counts. Every weapon changes the game.</p>
+            </div>
+
+            <div class="features__grid">
+                <article class="feature-card reveal">
+                    <span class="feature-card__number">01</span>
+                    <div class="feature-card__icon feature-card__icon--coral">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Precision Combat</h3>
+                    <p class="feature-card__desc">Frame-perfect dodging, tight controls, and responsive gunplay. Every movement matters when bullets fill the screen.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <span class="feature-card__number">02</span>
+                    <div class="feature-card__icon feature-card__icon--gold">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Endless Arsenal</h3>
+                    <p class="feature-card__desc">Hundreds of weapons with unique behaviors and synergies. From laser rifles to ricocheting revolvers, find your perfect loadout.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <span class="feature-card__number">03</span>
+                    <div class="feature-card__icon feature-card__icon--teal">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Dynamic Dungeons</h3>
+                    <p class="feature-card__desc">Procedurally generated levels ensure no two runs are alike. Explore branching paths, secret rooms, and hidden shops.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <span class="feature-card__number">04</span>
+                    <div class="feature-card__icon feature-card__icon--green">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Immersive Audio</h3>
+                    <p class="feature-card__desc">Adaptive soundtrack that intensifies with the action. Electronic beats and orchestral hits that keep your pulse racing.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <span class="feature-card__number">05</span>
+                    <div class="feature-card__icon feature-card__icon--coral">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Pixel Perfect Art</h3>
+                    <p class="feature-card__desc">Handcrafted pixel art environments and character sprites. Every explosion, every shell casing, every enemy is rendered with care.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <span class="feature-card__number">06</span>
+                    <div class="feature-card__icon feature-card__icon--gold">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3 class="feature-card__title">Achievement System</h3>
+                    <p class="feature-card__desc">Unlock achievements, discover rare items, and climb the leaderboards. Completionists will find hundreds of hours of challenges.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="gallery__container">
+            <div class="section-header section-header--left">
+                <span class="section-header__eyebrow">Visual Experience</span>
+                <h2 class="section-header__title">See The Action</h2>
+            </div>
+
+            <div class="gallery__scroll">
+                <article class="gallery__item">
+                    <div class="gallery__image" style="--accent: var(--coral);">
+                        <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="800" height="500" fill="#0f0f0f"/>
+                            <circle cx="400" cy="250" r="120" fill="none" stroke="#ff6b6b" stroke-width="1" opacity="0.3"/>
+                            <circle cx="400" cy="250" r="80" fill="none" stroke="#ff6b6b" stroke-width="1" opacity="0.5"/>
+                            <circle cx="400" cy="250" r="40" fill="none" stroke="#ff6b6b" stroke-width="2" opacity="0.8"/>
+                            <circle cx="400" cy="250" r="4" fill="#ff6b6b"/>
+                            <line x1="200" y1="150" x2="350" y2="220" stroke="#ff6b6b" stroke-width="0.5" opacity="0.4"/>
+                            <line x1="600" y1="150" x2="450" y2="220" stroke="#ff6b6b" stroke-width="0.5" opacity="0.4"/>
+                            <line x1="200" y1="350" x2="350" y2="280" stroke="#ff6b6b" stroke-width="0.5" opacity="0.4"/>
+                            <line x1="600" y1="350" x2="450" y2="280" stroke="#ff6b6b" stroke-width="0.5" opacity="0.4"/>
+                            <text x="400" y="420" text-anchor="middle" fill="#666" font-family="Space Grotesk, sans-serif" font-size="14">COMBAT ZONE ALPHA</text>
+                        </svg>
+                    </div>
+                    <div class="gallery__info">
+                        <span class="gallery__tag" style="--tag-color: var(--coral);">Combat</span>
+                        <h3>Intense Bullet-Hell Action</h3>
+                        <p>Dodge hundreds of projectiles in screen-filling boss encounters.</p>
+                    </div>
+                </article>
+
+                <article class="gallery__item">
+                    <div class="gallery__image" style="--accent: var(--teal);">
+                        <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="800" height="500" fill="#0f0f0f"/>
+                            <rect x="100" y="80" width="120" height="80" fill="none" stroke="#4ecdc4" stroke-width="1" opacity="0.4"/>
+                            <rect x="260" y="120" width="80" height="120" fill="none" stroke="#4ecdc4" stroke-width="1" opacity="0.3"/>
+                            <rect x="380" y="60" width="160" height="100" fill="none" stroke="#4ecdc4" stroke-width="1" opacity="0.5"/>
+                            <rect x="580" y="100" width="100" height="140" fill="none" stroke="#4ecdc4" stroke-width="1" opacity="0.3"/>
+                            <rect x="140" y="260" width="200" height="60" fill="none" stroke="#4ecdc4" stroke-width="1" opacity="0.4"/>
+                            <rect x="420" y="240" width="140" height="100" fill="none" stroke="#4ecdc4" stroke-width="1" opacity="0.3"/>
+                            <line x1="160" y1="160" x2="300" y2="180" stroke="#4ecdc4" stroke-width="0.5" opacity="0.6" stroke-dasharray="4,4"/>
+                            <line x1="460" y1="160" x2="630" y2="170" stroke="#4ecdc4" stroke-width="0.5" opacity="0.6" stroke-dasharray="4,4"/>
+                            <circle cx="200" cy="300" r="3" fill="#4ecdc4" opacity="0.8"/>
+                            <circle cx="490" cy="290" r="3" fill="#4ecdc4" opacity="0.8"/>
+                            <text x="400" y="420" text-anchor="middle" fill="#666" font-family="Space Grotesk, sans-serif" font-size="14">PROCEDURAL GENERATION</text>
+                        </svg>
+                    </div>
+                    <div class="gallery__info">
+                        <span class="gallery__tag" style="--tag-color: var(--teal);">World</span>
+                        <h3>Procedural Dungeons</h3>
+                        <p>Every floor is uniquely generated with branching paths and secrets.</p>
+                    </div>
+                </article>
+
+                <article class="gallery__item">
+                    <div class="gallery__image" style="--accent: var(--gold);">
+                        <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="800" height="500" fill="#0f0f0f"/>
+                            <polygon points="400,80 440,180 540,180 460,240 480,340 400,280 320,340 340,240 260,180 360,180" fill="none" stroke="#ffd93d" stroke-width="1.5" opacity="0.6"/>
+                            <polygon points="400,120 420,180 480,180 440,220 450,280 400,250 350,280 360,220 320,180 380,180" fill="none" stroke="#ffd93d" stroke-width="1" opacity="0.4"/>
+                            <circle cx="400" cy="200" r="10" fill="#ffd93d" opacity="0.8"/>
+                            <circle cx="300" cy="350" r="2" fill="#ffd93d" opacity="0.5"/>
+                            <circle cx="500" cy="380" r="2" fill="#ffd93d" opacity="0.5"/>
+                            <circle cx="200" cy="300" r="1.5" fill="#ffd93d" opacity="0.3"/>
+                            <circle cx="600" cy="320" r="1.5" fill="#ffd93d" opacity="0.3"/>
+                            <text x="400" y="420" text-anchor="middle" fill="#666" font-family="Space Grotesk, sans-serif" font-size="14">BOSS ENCOUNTER</text>
+                        </svg>
+                    </div>
+                    <div class="gallery__info">
+                        <span class="gallery__tag" style="--tag-color: var(--gold);">Boss</span>
+                        <h3>Epic Boss Battles</h3>
+                        <p>Face massive bosses with unique attack patterns and multiple phases.</p>
+                    </div>
+                </article>
+
+                <article class="gallery__item">
+                    <div class="gallery__image" style="--accent: var(--green);">
+                        <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="800" height="500" fill="#0f0f0f"/>
+                            <rect x="150" y="100" width="40" height="160" fill="none" stroke="#6bcf7f" stroke-width="1" opacity="0.4"/>
+                            <rect x="210" y="140" width="40" height="120" fill="none" stroke="#6bcf7f" stroke-width="1" opacity="0.3"/>
+                            <rect x="270" y="80" width="40" height="180" fill="none" stroke="#6bcf7f" stroke-width="1" opacity="0.5"/>
+                            <rect x="330" y="120" width="40" height="140" fill="none" stroke="#6bcf7f" stroke-width="1" opacity="0.3"/>
+                            <rect x="390" y="160" width="40" height="100" fill="none" stroke="#6bcf7f" stroke-width="1" opacity="0.4"/>
+                            <rect x="450" y="90" width="40" height="170" fill="none" stroke="#6bcf7f" stroke-width="1" opacity="0.3"/>
+                            <rect x="510" y="130" width="40" height="130" fill="none" stroke="#6bcf7f" stroke-width="1" opacity="0.5"/>
+                            <rect x="570" y="110" width="40" height="150" fill="none" stroke="#6bcf7f" stroke-width="1" opacity="0.3"/>
+                            <line x1="100" y1="260" x2="650" y2="260" stroke="#6bcf7f" stroke-width="0.5" opacity="0.3"/>
+                            <text x="400" y="420" text-anchor="middle" fill="#666" font-family="Space Grotesk, sans-serif" font-size="14">WEAPON VAULT</text>
+                        </svg>
+                    </div>
+                    <div class="gallery__info">
+                        <span class="gallery__tag" style="--tag-color: var(--green);">Arsenal</span>
+                        <h3>Hundreds of Weapons</h3>
+                        <p>Discover, collect, and combine weapons with unique synergies.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section class="download" id="download">
+        <div class="download__container">
+            <div class="download__bg">
+                <div class="download__gradient"></div>
+            </div>
+            <div class="download__content">
+                <span class="section-header__eyebrow section-header__eyebrow--light">Available Now</span>
+                <h2 class="download__title">Begin Your Journey</h2>
+                <p class="download__desc">Choose your platform and dive into the chaos. Available on PC and mobile.</p>
+                <div class="download__platforms">
+                    <a href="#" class="platform-btn" data-platform="steam">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.05 2 11.08c0 .97.19 1.9.53 2.78L7.5 11.5c.33-.72.9-1.32 1.63-1.68l-1.1-3.07c.9-.36 1.87-.56 2.9-.56h.07l3.35 2.43c.04 0 .07.02.1.03.58.94.91 2.03.91 3.17 0 3.16-2.68 5.72-5.96 5.72-2.76 0-5.1-1.85-5.78-4.35L2.6 16.3C3.9 19.6 7.1 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm-2.5 8.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/></svg>
+                        <div>
+                            <span class="platform-btn__label">Get on</span>
+                            <span class="platform-btn__name">Steam</span>
+                        </div>
+                    </a>
+                    <a href="#" class="platform-btn" data-platform="itch">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3.13 1.34C2.09 1.96 1.5 3.06 1.5 4.15v1.35c0 1.09.59 2.19 1.63 2.81l5.5 3.28c.55.33 1.22.33 1.77 0l5.5-3.28c1.04-.62 1.63-1.72 1.63-2.81V4.15c0-1.09-.59-2.19-1.63-2.81L10.4.06c-.55-.33-1.22-.33-1.77 0L3.13 1.34zM12 9.5L6.5 6.22 3.13 4.15 12 9.5l8.87-5.35L17.5 6.22 12 9.5z"/></svg>
+                        <div>
+                            <span class="platform-btn__label">Get on</span>
+                            <span class="platform-btn__name">Itch.io</span>
+                        </div>
+                    </a>
+                    <a href="#" class="platform-btn" data-platform="mobile">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                        <div>
+                            <span class="platform-btn__label">Get on</span>
+                            <span class="platform-btn__name">Mobile</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="site-footer__container">
+            <div class="site-footer__brand">
+                <span class="nav__logo-icon">G</span>
+                <span>GunRunner</span>
+            </div>
+            <div class="site-footer__links">
+                <a href="#">Twitter</a>
+                <a href="#">Discord</a>
+                <a href="#">YouTube</a>
+                <a href="#">Steam</a>
+            </div>
+            <p class="site-footer__copy">&copy; 2025 GunRunner. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
